@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useForm } from 'react-hook-form';
 import '../styles/form.css';
+import FirstName from './input-form/FirstName';
+import LastName from './input-form/LastName';
+import Phone from './input-form/Phone';
+import Age from './input-form/Age';
 
 const Form = ({ peopleArr, setPeopleArr }) => {
   const [ name, setName ] = useState('');
@@ -9,7 +13,7 @@ const Form = ({ peopleArr, setPeopleArr }) => {
   const [ phone, setPhone ] = useState('')
   const [ gender, setGender ] = useState('')
   const [ age, setAge ] = useState('');
-  const { register, errors, handleSubmit } = useForm()
+  const { register, errors, handleSubmit } = useForm();
 
   const patterValidLetters = (nameLine) => (
     errors[nameLine] && errors[nameLine].type === 'pattern'
@@ -60,42 +64,17 @@ const Form = ({ peopleArr, setPeopleArr }) => {
     <form onSubmit={handleSubmit(onSubmit)} className="form">
       <h2 className="form__title">Form</h2>
       <div className="form__block">
-        <input
-          className="form__input"
-          name="firstName"
-          placeholder="Your name"
-          value={name}
-          onChange={(event) => setName(event.target.value)}
-          ref={register({ required: true, pattern: /^[A-Za-z]+$/i })}
-          autocomplete="off"
-        />
+        <FirstName name={name} setName={setName} register={register} />
         {patterValidLetters('firstName')}
         {requiredValid('firstName')}
       </div>
       <div className="form__block">
-        <input
-          name="lastName"
-          className="form__input"
-          placeholder="Your last name"
-          value={lastName}
-          onChange={(event) => setLastName(event.target.value)}
-          ref={register({ required: true, pattern: /^[A-Za-z]+$/i })}
-          autocomplete="off"
-        />
+        <LastName lastName={lastName} setLastName={setLastName} register={register} />
         {patterValidLetters("lastName")}
         {requiredValid("lastName")}
       </div>
       <div className="form__block">
-        <input
-          type="text"
-          className="form__input"
-          name="phone"
-          placeholder="Your phone"
-          value={phone}
-          onChange={(event) => setPhone(event.target.value)}
-          ref={register({ required: true, pattern: /^\d+$/i})}
-          autocomplete="off"
-          />
+        <Phone phone={phone} setPhone={setPhone} register={register} />
         {patterValidNumber("phone")}
         {requiredValid("phone")}
       </div>
@@ -125,18 +104,7 @@ const Form = ({ peopleArr, setPeopleArr }) => {
         {requiredValid("gender")}
       </div>
       <div className="form__block">
-        <label>
-          <input
-            placeholder="how old are you?"
-            type="text"
-            className="form__input"
-            value={age}
-            onChange={(event) => setAge(event.target.value)}
-            name="age"
-            ref={register({ required: true, pattern: /^[1][0-2][0-9]$|^[1-9][0-9]$/})}
-            autocomplete="off"
-          />
-        </label>
+        <Age age={age} setAge={setAge} register={register} />
         {patterValidAge("age")}
         {requiredValid("age")}
       </div>
