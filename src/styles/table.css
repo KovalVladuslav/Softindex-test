@@ -1,0 +1,96 @@
+.table {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background: linear-gradient(to top, #ffffff 0%, #66ccff 100%);
+  border: 1px solid black;
+}
+
+.table__empty {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.item {
+  display: flex;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.item:hover {
+  background-color: rgb(248, 225, 94);
+}
+
+.table__title {
+  font-size: 20px;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  background-color: rgb(50, 3, 238);
+  color: rgb(251, 255, 41)
+}
+
+.table__title:hover {
+  background-color: rgb(50, 3, 238);
+}
+
+.item__block {
+  padding-left: 10px;
+  border-right: 1px solid black;
+  height: 40px;
+  width: 20%;
+  line-height: 40px;
+  box-sizing: border-box;
+  position: relative;
+  white-space: nowrap;
+}
+
+.item__button {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -20px;
+  top: 12px;
+  border: none;
+  outline: none;
+  padding: 0;
+  border-radius: 7px;
+}
+
+.item__delete {
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+}
+
+.item__delete:hover {
+  background-color: rgb(243, 118, 118);
+}
+
+.item__delete:active {
+  background-color: rgb(114, 87, 238);
+}
+
+.item__sort {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  transition: 0.3s;
+  background-color: #fff;
+  transform: rotate(180deg);
+  border-radius: 10px
+}
+
+.item__sort:hover {
+  transform: scale(1.2);
+}
+
+.item__sort:active {
+  opacity: 0.7;
+}
