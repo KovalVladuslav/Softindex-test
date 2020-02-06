@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Softindex-testnpm/static/css/main.8eadb609.chunk.css",
-    "main.js": "/Softindex-testnpm/static/js/main.fb985af4.chunk.js",
-    "main.js.map": "/Softindex-testnpm/static/js/main.fb985af4.chunk.js.map",
-    "runtime-main.js": "/Softindex-testnpm/static/js/runtime-main.ce210039.js",
-    "runtime-main.js.map": "/Softindex-testnpm/static/js/runtime-main.ce210039.js.map",
-    "static/js/2.ff249455.chunk.js": "/Softindex-testnpm/static/js/2.ff249455.chunk.js",
-    "static/js/2.ff249455.chunk.js.map": "/Softindex-testnpm/static/js/2.ff249455.chunk.js.map",
-    "index.html": "/Softindex-testnpm/index.html",
-    "precache-manifest.6a018622fa97c699bc983f6f3a94e517.js": "/Softindex-testnpm/precache-manifest.6a018622fa97c699bc983f6f3a94e517.js",
-    "service-worker.js": "/Softindex-testnpm/service-worker.js",
-    "static/css/main.8eadb609.chunk.css.map": "/Softindex-testnpm/static/css/main.8eadb609.chunk.css.map",
-    "static/js/2.ff249455.chunk.js.LICENSE.txt": "/Softindex-testnpm/static/js/2.ff249455.chunk.js.LICENSE.txt"
+    "main.css": "/Softindex-test/static/css/main.8eadb609.chunk.css",
+    "main.js": "/Softindex-test/static/js/main.fb985af4.chunk.js",
+    "main.js.map": "/Softindex-test/static/js/main.fb985af4.chunk.js.map",
+    "runtime-main.js": "/Softindex-test/static/js/runtime-main.22ac3200.js",
+    "runtime-main.js.map": "/Softindex-test/static/js/runtime-main.22ac3200.js.map",
+    "static/js/2.ff249455.chunk.js": "/Softindex-test/static/js/2.ff249455.chunk.js",
+    "static/js/2.ff249455.chunk.js.map": "/Softindex-test/static/js/2.ff249455.chunk.js.map",
+    "index.html": "/Softindex-test/index.html",
+    "precache-manifest.80e9d6af236334485f87cb65fb5ef3cb.js": "/Softindex-test/precache-manifest.80e9d6af236334485f87cb65fb5ef3cb.js",
+    "service-worker.js": "/Softindex-test/service-worker.js",
+    "static/css/main.8eadb609.chunk.css.map": "/Softindex-test/static/css/main.8eadb609.chunk.css.map",
+    "static/js/2.ff249455.chunk.js.LICENSE.txt": "/Softindex-test/static/js/2.ff249455.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce210039.js",
+    "static/js/runtime-main.22ac3200.js",
     "static/js/2.ff249455.chunk.js",
     "static/css/main.8eadb609.chunk.css",
     "static/js/main.fb985af4.chunk.js"
