@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Softindex-test/static/css/main.f2ec7acf.chunk.css",
+    "main.js": "/Softindex-test/static/js/main.bcb73fdc.chunk.js",
+    "main.js.map": "/Softindex-test/static/js/main.bcb73fdc.chunk.js.map",
+    "runtime-main.js": "/Softindex-test/static/js/runtime-main.22ac3200.js",
+    "runtime-main.js.map": "/Softindex-test/static/js/runtime-main.22ac3200.js.map",
+    "static/js/2.ff249455.chunk.js": "/Softindex-test/static/js/2.ff249455.chunk.js",
+    "static/js/2.ff249455.chunk.js.map": "/Softindex-test/static/js/2.ff249455.chunk.js.map",
+    "index.html": "/Softindex-test/index.html",
+    "precache-manifest.7a93c5e54dcf23a0821c8c4fdef2e98a.js": "/Softindex-test/precache-manifest.7a93c5e54dcf23a0821c8c4fdef2e98a.js",
+    "service-worker.js": "/Softindex-test/service-worker.js",
+    "static/css/main.f2ec7acf.chunk.css.map": "/Softindex-test/static/css/main.f2ec7acf.chunk.css.map",
+    "static/js/2.ff249455.chunk.js.LICENSE.txt": "/Softindex-test/static/js/2.ff249455.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22ac3200.js",
+    "static/js/2.ff249455.chunk.js",
+    "static/css/main.f2ec7acf.chunk.css",
+    "static/js/main.bcb73fdc.chunk.js"
+  ]
+}
