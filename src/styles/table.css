@@ -76,19 +76,26 @@
 }
 
 .item__sort {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   top: 11px;
   right: 10px;
   transition: 0.3s;
   background-color: #fff;
+  border-radius: 50%;
+}
+
+.reverse {
   transform: rotate(180deg);
-  border-radius: 10px
 }
 
 .item__sort:hover {
-  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.item__sort:visited {
+  transform: rotate(180deg);
 }
 
 .item__sort:active {

@@ -6,6 +6,13 @@ import Form from './components/Form';
 const App = () => {
   const [peopleArr, setPeopleArr] = useState([]);
   const [selectedSort, setValueSort] = useState('');
+  const [reverseArrow, setReverseArrow] = useState({
+    firstName: false,
+    lastName: false,
+    phone: false,
+    gender: false,
+    age: false
+  })
 
   useEffect(() => {
     const data = localStorage.getItem("list-people");
@@ -48,9 +55,11 @@ const App = () => {
       default: setPeopleArr([...peopleArr]);
     }
 
+    reverseArrow[select] = !reverseArrow[select];
+    setReverseArrow(reverseArrow)
+
     if (select === selectedSort) {
       const reverseArr = [...peopleArr].reverse();
-
       setPeopleArr(reverseArr)
     }
   };
@@ -61,6 +70,7 @@ const App = () => {
         peopleArr={peopleArr}
         sortPeopleArr={sortPeopleArr}
         deleteItemPeople={deleteItemPeople}
+        reverseArrow={reverseArrow}
       />
       <Form
         peopleArr={peopleArr}

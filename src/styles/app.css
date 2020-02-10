@@ -5,8 +5,14 @@
   padding: 40px 10px;
   font-family: 'Roboto', sans-serif;
   font-style: 16px;
+  max-width: 1560px;
 }
 
 body {
   background-color: rgb(231, 241, 241);
+}
+
+h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import '../styles/table.css';
 import TableHeader from './TableHeader';
 
-const Table = ({ peopleArr, sortPeopleArr, deleteItemPeople }) => (
+const Table = ({ peopleArr, sortPeopleArr, deleteItemPeople, reverseArrow }) => (
   <div className="table">
-    <TableHeader sortPeopleArr={sortPeopleArr}/>
+    <TableHeader sortPeopleArr={sortPeopleArr} reverseArrow={reverseArrow}/>
     {!peopleArr.length > 0 ? (
       <h1 className="table__empty">The list is empty...</h1>
     ) : (

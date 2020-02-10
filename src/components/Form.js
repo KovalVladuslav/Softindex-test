@@ -20,10 +20,13 @@ const Form = ({ peopleArr, setPeopleArr }) => {
       && <span className="form__error">Only letters should be in this line, please correct</span>
   )
 
-  const patterValidNumber = (nameLine) => (
-    errors[nameLine] && errors[nameLine].type === 'pattern'
+  const patterValidNumber = (nameLine) => {
+    if (!peopleArr.every(item => item.phone !== phone)) {
+      return <span className="form__error">Such a phone already exists</span>
+    }
+    return errors[nameLine] && errors[nameLine].type === 'pattern'
       && <span className="form__error">This line should only contain numbers, please correct</span>
-  )
+  }
 
   const patterValidAge = (nameLine) => (
     errors[nameLine] && errors[nameLine].type === 'pattern'

@@ -8,7 +8,7 @@ const Age = React.memo(({ age, setAge, register }) => (
     value={age}
     onChange={(event) => setAge(event.target.value)}
     name="age"
-    ref={register({ required: true, pattern: /^[1][0-2][0-9]$|^[1-9][0-9]$/})}
+    ref={register({ required: true, pattern: /^[1-9][0-9]$/})}
     autocomplete="off"
   />
 ));
