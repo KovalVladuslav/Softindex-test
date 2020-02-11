@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d3ac36ca9ec396ef11912d08de653ce",
+    "revision": "1805c1c245c51a29abe8e3d8a7494acd",
     "url": "/Softindex-test/index.html"
   },
   {
-    "revision": "70efe82de50aa523f3c3",
-    "url": "/Softindex-test/static/css/main.f2ec7acf.chunk.css"
+    "revision": "7fe7e15a40ff7fe3f4e7",
+    "url": "/Softindex-test/static/css/main.90b00741.chunk.css"
   },
   {
     "revision": "d5fb280a9cccb76849a7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Softindex-test/static/js/2.ff249455.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70efe82de50aa523f3c3",
-    "url": "/Softindex-test/static/js/main.bcb73fdc.chunk.js"
+    "revision": "7fe7e15a40ff7fe3f4e7",
+    "url": "/Softindex-test/static/js/main.20f7194e.chunk.js"
   },
   {
     "revision": "5b9511c5071d329745bc",
